@@ -10,13 +10,8 @@ private final Random random;
         this.random = new Random();
     }
 
-    /**
-     * Simulates rolling a dice and returns a random number between 1 and 6.
-     *
-     * @return a random integer between 1 and 6
-     */
     public int roll() {
-        return random.nextInt(6) + 1;
+        return random.nextInt(6) + 1; // Generates a random number between 1 and 6 +1 because nextInt(6) returns 0-5
         
     }    
    

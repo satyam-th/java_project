@@ -1,9 +1,13 @@
 import java.awt.Color;
-
+import java.io.Serializable;
+import java.util.UUID;
  /*
  * @author satyam
  */
-public class Player {
+public class Player implements Serializable {
+  private static final long serialVersionUID = 4L; // for serialization  and deserializtion not to mismatch
+  // giveing  player new uuid
+  int id = UUID.randomUUID().hashCode();
   String Name;
   Color color;
   int CurrentPosition;
@@ -54,6 +58,9 @@ public int getSnakeHit() {
 public int getLadderUP() {
   return this.LadderUP;
 }
+public int getId() {
+  return id; // Return the unique ID of the player
+}
 //setters
 public void setName(String name) {
   this.Name = name;
@@ -93,6 +100,7 @@ public String toString() {
           ", Wins=" + Wins +
           ", Losses=" + Losses +
           ", isActive=" + isActive +
+          ", id=" + id +
           '}';
 
 }
