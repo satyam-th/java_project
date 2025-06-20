@@ -12,3 +12,6 @@ Welcome to the **haude_dev** group's Java project! This repository contains the 
 ## 📁 Project Structure
 - player.java 
 - dice. java
+- board but error fix while doing day 3
+- making code clean 
+- * left to add gamelog dunction to gameinstance

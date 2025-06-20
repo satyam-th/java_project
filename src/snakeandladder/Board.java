@@ -1,4 +1,5 @@
 //checking at being able to import this file
+
 import java.util.*; // this is for Collections.unmodifiableMap
 public class Board {
     final static int BOARD_SIZE = 100; // Size of the board
@@ -32,7 +33,7 @@ public class Board {
     this.snakes.put(95, 75);
     this.snakes.put(93, 73);
     
-}
+    }
     public  int getDestination(int position) {
         if(this.snakes.containsKey(position)) { // checking key for the snake it pass true or false
             return this.snakes.get(position); // If the position lands on a snake, return the tail
