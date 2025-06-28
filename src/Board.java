@@ -6,8 +6,11 @@ public class Board {
     private final Map<Integer, Integer> snakes; // Map of snake heads to tails
     private final Map<Integer, Integer> ladders; // Map of ladder bottoms to tops
 
+    public int getBoardSize(){
+        return Board.BOARD_SIZE;
+    }
   
-        public Board() {
+    public Board() {
         this.snakes = new HashMap<>(); // fix this 
         this.ladders = new HashMap<>();
     }
@@ -34,7 +37,8 @@ public class Board {
     this.snakes.put(93, 73);
     
     }
-    public  int getDestination(int position) {
+    public
+    int getDestination(int position) {
         if(this.snakes.containsKey(position)) { // checking key for the snake it pass true or false
             return this.snakes.get(position); // If the position lands on a snake, return the tail
         } else if (this.ladders.containsKey(position)) {

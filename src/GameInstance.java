@@ -55,23 +55,23 @@ public class GameInstance {
                 int CurrentPosition = currentPlayer.getCurrentPosition();
                 if(CurrentPosition == 0){
                     CurrentPosition = 1;
-
                 }
+                
                 else{
                     CurrentPosition = currentPlayer.getCurrentPosition();
                 }
             
                int newPosition =  CurrentPosition +  diceroll;
             
-                if(newPosition > Board.BOARD_SIZE){
-                    log(currentPlayer.getName() + "needs " + (Board.BOARD_SIZE -currentPlayer.getCurrentPosition()) + "to win game" + diceroll + ". Stays at" + currentPlayer.getCurrentPosition());
+                if(newPosition > board.getBoardSize()){
+                    log(currentPlayer.getName() + "needs " + (board.getBoardSize() -currentPlayer.getCurrentPosition()) + "to win game" + diceroll + ". Stays at" + currentPlayer.getCurrentPosition());
                 }
                 else{
                     currentPlayer.setCurrentPosition(newPosition);
                     log(currentPlayer.getName() +" " + CurrentPosition + " to " + newPosition);
                     
                     // now check the palyer is in the sanke or ladder
-                    int finalPosition = Board.getDestination(currentPlayer.getCurrentPosition()); // this should not give a problem
+                    int finalPosition = board.getDestination(currentPlayer.getCurrentPosition()); // this should not give a problem
 
                         //checking now if there was snake and ladder or not
                         if(finalPosition != currentPlayer.getCurrentPosition()){
