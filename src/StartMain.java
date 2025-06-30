@@ -53,12 +53,11 @@ public class StartMain extends JFrame {
     private void playGame() {
      
       SnakeAndLaddergui gotostart = new SnakeAndLaddergui();
+      setVisible(true);             // show it
+      
+      dispose();
+      gotostart.startnewgame();
 
-        gotostart.run(); 
-         gotostart.startnewgame();  
-        setVisible(true);             // show it
-         dispose();
-              
     }
     
        private void searchButton() {

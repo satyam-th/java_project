@@ -10,7 +10,7 @@ public class GameInstance {
     private List<String> gamelog;
     private Map<String, List<Integer>> playerDiceRolls; // to store the data of 
     private  Board board;
-
+    private Map<Integer,String> killplayercheck;
         public GameInstance(List<Player> gameplayers){
              this.board = new Board();
              this.player = new ArrayList<>();
@@ -20,15 +20,20 @@ public class GameInstance {
              this.Gameover = false;
              this.winPlayer = null;
              this.dice = new Dice();
-
+             this.killplayercheck = new HashMap<>();
+                
 
             for (Player p : gameplayers){
                 p.resetfornewGame(); // seting player at zero 
                 p.setActive(true); 
                 this.player.add(p); // adding the player  in the game 
                 this.playerDiceRolls.put(p.getName(), new ArrayList<>()); // creating the array list for the player  name = key  left to give value
-
-            }   
+                
+            } 
+killplayercheck.put(0, "");
+killplayercheck.put(0, "palyer2");
+killplayercheck.put(0, "palyer3");
+killplayercheck.put(0, "palyer4");
                 // message to log
              log("Game start with" + player.stream().map(Player::getName).collect(Collectors.joining(", ")));
           
@@ -44,7 +49,7 @@ public class GameInstance {
               return "Game is over.";
             }
             else{
-
+                System.out.println(killplayercheck);
                 
                 Player currentPlayer = getcurrentPlayer(); // taking palyer position 
                 int diceroll = dice.roll();                 // taking random number of 1 - 6
@@ -71,16 +76,20 @@ public class GameInstance {
                     log(currentPlayer.getName() +" " + CurrentPosition + " to " + newPosition);
                     
                     // now check the palyer is in the sanke or ladder
+                    System.out.println("player was in " + currentPlayer.getCurrentPosition());
                     int finalPosition = board.getDestination(currentPlayer.getCurrentPosition()); // this should not give a problem
+                    System.out.println("check : "+ finalPosition);
 
                         //checking now if there was snake and ladder or not
                         if(finalPosition != currentPlayer.getCurrentPosition()){
                             if(board.isSankeHead(currentPlayer.getCurrentPosition())){
                                 //log
+                                System.out.println("snake hit");
                                 log("ohhh NOOOOOO! " +currentPlayer.getName()+ "step at sanke " + currentPlayer.getCurrentPosition() +" eaten by snake now: " +finalPosition +"."  );
                                 currentPlayer.incrementSnakeHit();
                             }
                             else if(board.isLadderBottom(currentPlayer.getCurrentPosition())){
+                                System.out.println("ladder came");
                                 log("ohh yehh! I  found ladder at" + currentPlayer.getCurrentPosition() + "i reach to: " +  finalPosition );
                             }
                              currentPlayer.setCurrentPosition(finalPosition);

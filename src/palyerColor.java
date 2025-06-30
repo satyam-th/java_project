@@ -7,6 +7,6 @@ import java.awt.color.*;
     };
     
     public static Color getnextColor(int playeri){
-        return colors[playeri % colors.length];
+        return colors[playeri];
     }
 }

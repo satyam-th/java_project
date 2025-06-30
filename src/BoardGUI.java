@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
 import java.util.List;
 import java.util.Map;
 
@@ -9,6 +10,8 @@ public class BoardGUI extends JPanel {
     private static final int BOARD_PIXEL_SIZE = CELL_SIZE * BOARD_DIM;
 
     private GameInstance currentGame;
+
+    // this is for snake and ladder if they need
     private Board boardDef;
     private JLabel backgroundImage;
 
@@ -24,40 +27,46 @@ public class BoardGUI extends JPanel {
     }
 
     @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        Graphics2D sndgraphics = (Graphics2D) g;
+    protected void paintComponent(Graphics snd) {
+
+        // //  background img
+        // ImageIcon bgIcon = new ImageIcon("C:\\Users\\satya\\Desktop\\SnakeAndLadder\\img\\snd.jpg");
+        // backgroundImage = new JLabel(bgIcon);
+        // backgroundImage.setBounds(0, 0, 600, 600);
+        // add(backgroundImage);
+
         
+        super.paintComponent(snd);
+        Graphics2D sndgraphics = (Graphics2D) snd;
+        ImageIcon bgIcon = new ImageIcon("C:\\Users\\satya\\Desktop\\SnakeAndLadder\\img\\snd.jpg");
+        Image sndimg = bgIcon.getImage();
+        sndgraphics.drawImage(sndimg, 0, 0, BOARD_PIXEL_SIZE, BOARD_PIXEL_SIZE, this);        
 
         // Draw grid
-        boolean leftToRight;
-        int count = 100;
+//         boolean leftToRight;
+//         int count = 100;
+// // this board check with img size
+        // for (int row = 0; row < BOARD_DIM; row++) {
+        //     leftToRight = ((BOARD_DIM - 1 - row) % 2 == 0);
+        //     // System.out.println(leftToRight);
+        //     for (int col = 0; col < BOARD_DIM; col++) {
+        //         int number = leftToRight ? count - (9 - col) : count - col;
+        //         int x = col * CELL_SIZE;
+        //         int y = row * CELL_SIZE;
 
-        for (int row = 0; row < BOARD_DIM; row++) {
-            leftToRight = ((BOARD_DIM - 1 - row) % 2 == 0);
-            System.out.println(leftToRight);
-            for (int col = 0; col < BOARD_DIM; col++) {
-                int number = leftToRight ? count - (9 - col) : count - col;
-                int x = col * CELL_SIZE;
-                int y = row * CELL_SIZE;
-
-                // Draw cell border and number
-                sndgraphics.setColor(Color.BLACK);
-                sndgraphics.drawRect(x, y, CELL_SIZE, CELL_SIZE);
-                sndgraphics.drawString(String.valueOf(number), x + 5, y + 15);
-            }
-            count -= 10;
-        }
+        //         // Draw cell border and number
+        //         sndgraphics.setColor(Color.BLACK);
+        //         sndgraphics.drawRect(x, y, CELL_SIZE, CELL_SIZE);
+        //         sndgraphics.drawString(String.valueOf(number), x + 5, y + 15);
+        //     }
+        //     count -= 10;
+        // }
 
 
 
         
 
-        //background img
-        ImageIcon bgIcon = new ImageIcon("C:\\Users\\satya\\Desktop\\SnakeAndLadder\\img\\snd.jpg");
-        backgroundImage = new JLabel(bgIcon);
-        backgroundImage.setBounds(0, 0, 600, 600);
-        add(backgroundImage);
+       
 
 
         // for the active player
@@ -69,10 +78,11 @@ public class BoardGUI extends JPanel {
                 if(player.getCurrentPosition() > 0){
                     Point playercoordinate =  getCellPixelCoordinates(player.getCurrentPosition());
                     sndgraphics.setColor(player.getColor());
-                    int xcoor = (i % 2) * (CELL_SIZE / 2);
-                    int ycoor = (i % 2) * (CELL_SIZE / 2);
+                    int xcoor = (0) * (CELL_SIZE / 2);
+                    int ycoor = (0) * (CELL_SIZE / 2);
+                       // sndgraphics.drawOval(playercoordinate.x + xcoor, ycoor + playercoordinate.y, 25, 25);
                     sndgraphics.fillOval(playercoordinate.x + xcoor, ycoor + playercoordinate.y, 25, 25);
-                    sndgraphics.drawOval(playercoordinate.x + xcoor, ycoor + playercoordinate.y, 25, 25);
+                    
                 }
             }
         }
