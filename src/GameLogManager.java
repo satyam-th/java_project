@@ -71,11 +71,11 @@ public class GameLogManager {
     public List<String> searchname(String name){
         List<String> results = new ArrayList<>();
         
-        File folder = new File(".");
-       File[] files = folder.listFiles(new FilenameFilter() {
+File folder = new File(".");
+File[] files = folder.listFiles(new FilenameFilter() {
     @Override
     public boolean accept(File dir, String name) {
-        return name.startsWith("gamelog") && name.endsWith(".txt");
+        return name.startsWith("Your_Game_Record_") && name.endsWith(".txt");
     }
 });
 

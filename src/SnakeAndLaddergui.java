@@ -72,6 +72,7 @@ private void createguiinterface(){
 
 
     currentpalyershow = new JLabel("starting a game");
+    currentpalyershow.setFont(new Font("Arial", Font.BOLD, 20)); // Make text bigger and bold
     controlPanel.add(currentpalyershow);
      
 
@@ -168,7 +169,7 @@ private void createguiinterface(){
 
                     //showing current player
                     currentpalyershow.setText("Roll dice: " + currnetplayer.getName());
-                    currnetplayer.setColor(currnetplayer.getColor());
+                    currentpalyershow.setForeground(currnetplayer.getColor());
 
 
              }
@@ -247,7 +248,7 @@ private void createguiinterface(){
         gamelogArea.setEnabled(true);
         gamelogArea.setText(""); // Clear previous logs
         msgshowlog("Game started with " + Currentplayerset.size() + " players.");
-        msgshowlog("Game start with " + Currentplayerset.stream().map(Player::getName).collect(Collectors.joining(", ")));
+        msgshowlog("Players: " + Currentplayerset.stream().map(Player::getName).collect(Collectors.joining(", ")));
     }
 
 

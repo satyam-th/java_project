@@ -69,7 +69,7 @@ public class GameInstance {
                int newPosition =  CurrentPosition +  diceroll;
             
                 if(newPosition > board.getBoardSize()){
-                    log(currentPlayer.getName() + "needs " + (board.getBoardSize() -currentPlayer.getCurrentPosition()) + "to win game" + diceroll + ". Stays at" + currentPlayer.getCurrentPosition());
+                    log(currentPlayer.getName() + " needs " + (board.getBoardSize() -currentPlayer.getCurrentPosition()) + " to win game" + diceroll + ". Stays at" + currentPlayer.getCurrentPosition());
                 }
                 else{
                     currentPlayer.setCurrentPosition(newPosition);
@@ -110,7 +110,7 @@ public class GameInstance {
                     }
                     log(currentPlayer.getName()+ " is  winner of this game!!");
                 }
-                return currentPlayer.getName() + "wins the match";
+                return currentPlayer.getName() + " wins the match";
             }
 
         
