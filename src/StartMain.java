@@ -51,7 +51,7 @@ public class StartMain extends JFrame {
     }
 
     private void playGame() {
-     
+        
       SnakeAndLaddergui gotostart = new SnakeAndLaddergui();
       setVisible(true);             // show it
       
@@ -61,6 +61,9 @@ public class StartMain extends JFrame {
     }
     
        private void searchButton() {
+        searchgui search = new searchgui();
+        setVisible(true); // show the search GUI
+        dispose(); // close the main frame
         
         System.out.println("search  on terminal");
     }

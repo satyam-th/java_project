@@ -30,10 +30,10 @@ public class GameInstance {
                 this.playerDiceRolls.put(p.getName(), new ArrayList<>()); // creating the array list for the player  name = key  left to give value
                 
             } 
-killplayercheck.put(0, "");
-killplayercheck.put(0, "palyer2");
-killplayercheck.put(0, "palyer3");
-killplayercheck.put(0, "palyer4");
+    killplayercheck.put(0, "");
+    killplayercheck.put(0, "palyer2");
+    killplayercheck.put(0, "palyer3");
+    killplayercheck.put(0, "palyer4");
                 // message to log
              log("Game start with" + player.stream().map(Player::getName).collect(Collectors.joining(", ")));
           

@@ -16,11 +16,14 @@ private GameInstance currentgame;
 private BoardGUI boardPanel;
 
 private Board boardDefinition;
+private GameLogManager gameLogManager = new GameLogManager();
 
 private JLabel currentpalyershow;
 private JLabel diceimg;
 private JButton rolldice;
 private JButton resetgame;
+private JTextArea gamelogArea;
+
 
 
 public SnakeAndLaddergui(){
@@ -41,11 +44,22 @@ private void createguiinterface(){
                 boardPanel = new BoardGUI(boardDefinition);
 
                 frame.add(boardPanel,BorderLayout.CENTER);
-                
+                //back button
+                JButton backButton = new JButton("<-Back");
+                backButton.setBounds(10, 10, 80, 30);
+
+               
     // control panel setup
     JPanel controlPanel = new JPanel();
     controlPanel.setLayout(new BoxLayout(controlPanel, BoxLayout.Y_AXIS));
     controlPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+    controlPanel.add(backButton);
+     //action for back
+          backButton.addActionListener(e -> {
+            StartMain startMain = new StartMain();
+            frame.dispose(); // Close the search GUI
+        });
 
 
 
@@ -66,19 +80,30 @@ private void createguiinterface(){
          );
         controlPanel.add(rolldice);
 
-    diceimg = new JLabel();
+        diceimg = new JLabel();
+
+
+
+        controlPanel.add(Box.createHorizontalStrut(10));
+          resetgame = new JButton("RESET GAME");
+          
+          resetgame.addActionListener(e -> startnewgame());
+          controlPanel.add(resetgame);
+
+
+
+          //log area
+          JLabel logLabel = new JLabel("Game Log:");
+          controlPanel.add(logLabel);
+            gamelogArea = new JTextArea(20, 30);
+            gamelogArea.setEditable(false);
+            JScrollPane scrollPane = new JScrollPane(gamelogArea);
+            controlPanel.add(scrollPane);
 
 
 
 
     frame.add(controlPanel, BorderLayout.EAST);
-
-
-
-
-
-
-        
 
 
 
@@ -102,7 +127,7 @@ private void createguiinterface(){
 
                 String trunmsg =currentgame.playturn();
                 //for log
-                System.out.println(trunmsg);
+                msgshowlog(trunmsg);
                 //
                 updategameplay();
                 
@@ -112,7 +137,10 @@ private void createguiinterface(){
                 if(currentgame.isgameover()){
                     rolldice.setEnabled(false);
                     Player winner = currentgame.getwinner();
-                    JOptionPane.showMessageDialog(frame, winner.getName()+" is winnner of this game!!" ,"gameover",JOptionPane.INFORMATION_MESSAGE);
+                    msgshowlog(trunmsg + "\n" + winner.getName() + " is winner of this game!!");
+                    JOptionPane.showMessageDialog(frame, winner.getName() + " is winner of this game!!", "gameover", JOptionPane.INFORMATION_MESSAGE);
+                    gameLogManager.savegamelog(currentgame);
+                    currentgame = null; // reset current game
                 }
 
             }
@@ -122,6 +150,8 @@ private void createguiinterface(){
 
         }
 
+
+       
         
 
         //for the palyer name should be update
@@ -185,7 +215,14 @@ private void createguiinterface(){
         for (int i = 0; i < numberofplayer; i++) {
             Player pget = new Player(names.get(i), palyerColor.getnextColor(i)); // assuming PlayerColor is a class with getNextColor
             Currentplayerset.add(pget);
+
         }
+
+        //rule for the game with msg
+        String rule = "<html>1.palyer has to roll dice first to show the palyer.<br> 2.snake and ladder work snake eat you and ladder help you to go up.<br> 3.comming soon another palyer can also kill you and kill palyer will go to 0 palyer has to roll dice to  show their dice";
+        JOptionPane.showMessageDialog(frame, rule,
+         "Rule", JOptionPane.INFORMATION_MESSAGE);
+
 
         currentgame = new GameInstance(Currentplayerset);
 
@@ -199,9 +236,19 @@ private void createguiinterface(){
             frame.add(boardPanel);
             frame.pack();
         }
+        rolldice.setEnabled(true);
+        gamelogArea.setEnabled(true);
+        gamelogArea.setText(""); // Clear previous logs
+        msgshowlog("Game started with " + Currentplayerset.size() + " players.");
     }
 
 
+
+
+        public void msgshowlog(String message) {
+           gamelogArea.append(message + "\n");
+           gamelogArea.setCaretPosition(gamelogArea.getDocument().getLength());
+        }
 
 
 

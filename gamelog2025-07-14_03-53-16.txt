@@ -1,0 +1,84 @@
+Game date: 2025-07-14_03-53-16
+gamelog2025-07-14_03-53-16.txt
+Winner:Player 2
+------palyers-----
+Palyer: Player 1Postion: 61
+Dice roll: [6, 3, 1, 3, 6, 4, 5, 1, 2, 4, 6, 6, 1, 3, 4, 2, 3]
+Palyer: Player 2Postion: 100
+Dice roll: [3, 1, 3, 2, 1, 1, 2, 1, 4, 5, 2, 6, 3, 5, 6, 2, 1]
+full log
+Game start withPlayer 1, Player 2
+Player 1roll dice6.
+Player 1 1 to 7
+Player 2roll dice3.
+Player 2 1 to 4
+ohh yehh! I  found ladder at4i reach to: 14
+Player 1roll dice3.
+Player 1 7 to 10
+Player 2roll dice1.
+Player 2 14 to 15
+Player 1roll dice1.
+Player 1 10 to 11
+Player 2roll dice3.
+Player 2 15 to 18
+Player 1roll dice3.
+Player 1 11 to 14
+Player 2roll dice2.
+Player 2 18 to 20
+Player 1roll dice6.
+Player 1 14 to 20
+Player 2roll dice1.
+Player 2 20 to 21
+ohh yehh! I  found ladder at21i reach to: 42
+Player 1roll dice4.
+Player 1 20 to 24
+Player 2roll dice1.
+Player 2 42 to 43
+Player 1roll dice5.
+Player 1 24 to 29
+Player 2roll dice2.
+Player 2 43 to 45
+Player 1roll dice1.
+Player 1 29 to 30
+Player 2roll dice1.
+Player 2 45 to 46
+Player 1roll dice2.
+Player 1 30 to 32
+Player 2roll dice4.
+Player 2 46 to 50
+Player 1roll dice4.
+Player 1 32 to 36
+Player 2roll dice5.
+Player 2 50 to 55
+Player 1roll dice6.
+Player 1 36 to 42
+Player 2roll dice2.
+Player 2 55 to 57
+Player 1roll dice6.
+Player 1 42 to 48
+Player 2roll dice6.
+Player 2 57 to 63
+Player 1roll dice1.
+Player 1 48 to 49
+Player 2roll dice3.
+Player 2 63 to 66
+Player 1roll dice3.
+Player 1 49 to 52
+Player 2roll dice5.
+Player 2 66 to 71
+ohh yehh! I  found ladder at71i reach to: 91
+Player 1roll dice4.
+Player 1 52 to 56
+Player 2roll dice6.
+Player 2 91 to 97
+Player 1roll dice2.
+Player 1 56 to 58
+Player 2roll dice2.
+Player 2 97 to 99
+Player 1roll dice3.
+Player 1 58 to 61
+Player 2roll dice1.
+Player 2 99 to 100
+Player 2 is  winner of this game!!
+Player 2 is  winner of this game!!
+------End of Game Log-----
