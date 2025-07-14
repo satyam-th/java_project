@@ -101,7 +101,7 @@ public class BoardGUI extends JPanel {
             col = BOARD_DIM - 1 - ((cellNumber - 1) % BOARD_DIM);
         }
         int x = col * CELL_SIZE + 25;
-        int y = (BOARD_DIM - 1 - row) * CELL_SIZE + 25;
+        int y = (BOARD_DIM - 1 - row) * CELL_SIZE + 25; 
         return new Point(x, y);
     }
 

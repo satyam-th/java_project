@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 public class SnakeAndLaddergui {
 
 
@@ -42,11 +43,8 @@ private void createguiinterface(){
 
                         // in the frame
                 boardPanel = new BoardGUI(boardDefinition);
-
                 frame.add(boardPanel,BorderLayout.CENTER);
-                //back button
-                JButton backButton = new JButton("<-Back");
-                backButton.setBounds(10, 10, 80, 30);
+                
 
                
     // control panel setup
@@ -54,13 +52,23 @@ private void createguiinterface(){
     controlPanel.setLayout(new BoxLayout(controlPanel, BoxLayout.Y_AXIS));
     controlPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-    controlPanel.add(backButton);
+
+
+    //back button
+                JButton backButton = new JButton("<-Back");
+                backButton.setBounds(10, 10, 80, 30);
+      controlPanel.add(backButton);
      //action for back
           backButton.addActionListener(e -> {
             StartMain startMain = new StartMain();
             frame.dispose(); // Close the search GUI
         });
 
+          resetgame = new JButton("RESET GAME");
+            resetgame.setBounds(100, 10, 80, 30);
+          
+          resetgame.addActionListener(e -> startnewgame());
+          controlPanel.add(resetgame);
 
 
     currentpalyershow = new JLabel("starting a game");
@@ -84,20 +92,19 @@ private void createguiinterface(){
 
 
 
-        controlPanel.add(Box.createHorizontalStrut(10));
-          resetgame = new JButton("RESET GAME");
-          
-          resetgame.addActionListener(e -> startnewgame());
-          controlPanel.add(resetgame);
+        // controlPanel.add(Box.createHorizontalStrut(10));
+        
 
 
 
-          //log area
+        //   //log area
           JLabel logLabel = new JLabel("Game Log:");
           controlPanel.add(logLabel);
-            gamelogArea = new JTextArea(20, 30);
+            gamelogArea = new JTextArea(10, 40);
             gamelogArea.setEditable(false);
-            JScrollPane scrollPane = new JScrollPane(gamelogArea);
+    
+            JScrollPane scrollPane = new JScrollPane(gamelogArea, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+            scrollPane.setAlignmentX(Component.LEFT_ALIGNMENT); // Align scroll pane to the left
             controlPanel.add(scrollPane);
 
 
@@ -233,13 +240,14 @@ private void createguiinterface(){
             Board boardDefinition = new Board();
             boardPanel = new BoardGUI(boardDefinition);
             boardPanel.setCurrentGame(currentgame);
-            frame.add(boardPanel);
+            frame.add(boardPanel, BorderLayout.CENTER);
             frame.pack();
         }
         rolldice.setEnabled(true);
         gamelogArea.setEnabled(true);
         gamelogArea.setText(""); // Clear previous logs
         msgshowlog("Game started with " + Currentplayerset.size() + " players.");
+        msgshowlog("Game start with " + Currentplayerset.stream().map(Player::getName).collect(Collectors.joining(", ")));
     }
 
 

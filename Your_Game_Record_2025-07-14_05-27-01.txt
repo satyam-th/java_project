@@ -1,0 +1,136 @@
+Game date: 2025-07-14_05-27-01
+Your filename: Your_Game_Record_2025-07-14_05-27-01.txt
+Winner: Player 2
+------Players-----
+Player: Player 1 Position: 30
+Dice roll: [4, 1, 5, 2, 6, 2, 2, 3, 6, 3, 3, 3, 5, 6]
+Player: Player 2 Position: 100
+Dice roll: [2, 2, 6, 4, 5, 2, 6, 3, 3, 1, 5, 6, 5, 1]
+Player: Player 3 Position: 69
+Dice roll: [6, 2, 6, 3, 6, 2, 2, 3, 3, 3, 4, 4, 2]
+Player: Player 4 Position: 73
+Dice roll: [3, 6, 5, 6, 4, 6, 5, 2, 5, 6, 6, 2, 6]
+full log
+Game start withPlayer 1, Player 2, Player 3, Player 4
+Player 1roll dice4.
+Player 1 1 to 5
+Player 2roll dice2.
+Player 2 1 to 3
+Player 3roll dice6.
+Player 3 1 to 7
+Player 4roll dice3.
+Player 4 1 to 4
+ohh yehh! I  found ladder at4i reach to: 14
+Player 1roll dice1.
+Player 1 5 to 6
+Player 2roll dice2.
+Player 2 3 to 5
+Player 3roll dice2.
+Player 3 7 to 9
+ohh yehh! I  found ladder at9i reach to: 31
+Player 4roll dice6.
+Player 4 14 to 20
+Player 1roll dice5.
+Player 1 6 to 11
+Player 2roll dice6.
+Player 2 5 to 11
+Player 3roll dice6.
+Player 3 31 to 37
+Player 4roll dice5.
+Player 4 20 to 25
+Player 1roll dice2.
+Player 1 11 to 13
+Player 2roll dice4.
+Player 2 11 to 15
+Player 3roll dice3.
+Player 3 37 to 40
+Player 4roll dice6.
+Player 4 25 to 31
+Player 1roll dice6.
+Player 1 13 to 19
+Player 2roll dice5.
+Player 2 15 to 20
+Player 3roll dice6.
+Player 3 40 to 46
+Player 4roll dice4.
+Player 4 31 to 35
+Player 1roll dice2.
+Player 1 19 to 21
+ohh yehh! I  found ladder at21i reach to: 42
+Player 2roll dice2.
+Player 2 20 to 22
+Player 3roll dice2.
+Player 3 46 to 48
+Player 4roll dice6.
+Player 4 35 to 41
+Player 1roll dice2.
+Player 1 42 to 44
+Player 2roll dice6.
+Player 2 22 to 28
+ohh yehh! I  found ladder at28i reach to: 84
+Player 3roll dice2.
+Player 3 48 to 50
+Player 4roll dice5.
+Player 4 41 to 46
+Player 1roll dice3.
+Player 1 44 to 47
+Player 2roll dice3.
+Player 2 84 to 87
+ohhh NOOOOOO! Player 2step at sanke 87 eaten by snake now: 24.
+Player 3roll dice3.
+Player 3 50 to 53
+Player 4roll dice2.
+Player 4 46 to 48
+Player 1roll dice6.
+Player 1 47 to 53
+Player 2roll dice3.
+Player 2 24 to 27
+Player 3roll dice3.
+Player 3 53 to 56
+Player 4roll dice5.
+Player 4 48 to 53
+Player 1roll dice3.
+Player 1 53 to 56
+Player 2roll dice1.
+Player 2 27 to 28
+ohh yehh! I  found ladder at28i reach to: 84
+Player 3roll dice3.
+Player 3 56 to 59
+Player 4roll dice6.
+Player 4 53 to 59
+Player 1roll dice3.
+Player 1 56 to 59
+Player 2roll dice5.
+Player 2 84 to 89
+Player 3roll dice4.
+Player 3 59 to 63
+Player 4roll dice6.
+Player 4 59 to 65
+Player 1roll dice3.
+Player 1 59 to 62
+ohhh NOOOOOO! Player 1step at sanke 62 eaten by snake now: 19.
+Player 2roll dice6.
+Player 2 89 to 95
+ohhh NOOOOOO! Player 2step at sanke 95 eaten by snake now: 75.
+Player 3roll dice4.
+Player 3 63 to 67
+Player 4roll dice2.
+Player 4 65 to 67
+Player 1roll dice5.
+Player 1 19 to 24
+Player 2roll dice5.
+Player 2 75 to 80
+ohh yehh! I  found ladder at80i reach to: 99
+Player 3roll dice2.
+Player 3 67 to 69
+Player 4roll dice6.
+Player 4 67 to 73
+Player 1roll dice6.
+Player 1 24 to 30
+Player 2roll dice1.
+Player 2 99 to 100
+Player 2 is  winner of this game!!
+Player 2 is  winner of this game!!
+Player 2 is  winner of this game!!
+Player 2 is  winner of this game!!
+------End of Game Log-----

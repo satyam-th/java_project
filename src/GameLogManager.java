@@ -22,21 +22,24 @@ public class GameLogManager {
     else{
 
         String gametime = new SimpleDateFormat("yyyy-MM-dd_hh-mm-ss").format(new Date());
-        String filename = "gamelog" + gametime + ".txt";
+        String filename = "Your_Game_Record_" + gametime + ".txt";
 
 
 
-
+        // create a new file with the game time
+        // if the file already exists, it will be overwritten
         try (PrintWriter writer = new PrintWriter(new FileWriter(filename))){
-            // writing into text
+            // writing into text file
             writer.println("Game date: " + gametime);
-            writer.println(filename); 
-            writer.println("Winner:" + game.getwinner().getName());
-            writer.println("------palyers-----");
+
+            writer.println("Your filename: " + filename);
             
-            for(Player player : game.getPlayers()){
-                writer.println("Palyer: " + player.getName() + "Postion: " + player.getCurrentPosition());
-            writer.println("Dice roll: " + game.getpalyerdiceroll().get(player.getName()));
+            writer.println("Winner: " + game.getwinner().getName());
+            writer.println("------Players-----");
+
+            for (Player player : game.getPlayers()) {
+                writer.println("Player: " + player.getName() + " Position: " + player.getCurrentPosition());
+                writer.println("Dice roll: " + game.getpalyerdiceroll().get(player.getName()));
             
             }
 

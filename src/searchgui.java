@@ -14,12 +14,19 @@ public class searchgui {
         // Top panel for search input
         JPanel searchPanel = new JPanel();
         JTextField searchField = new JTextField(20);
+
         JButton searchButton = new JButton("Search");
         searchPanel.add(new JLabel("Enter Player Name: "));
         JButton backButton = new JButton("<-Back");
+
         searchPanel.add(searchField);
         searchPanel.add(searchButton);
         searchPanel.add(backButton);
+
+
+
+
+
     
         // Center panel for results
         JTextArea resultArea = new JTextArea(20, 30);
@@ -51,6 +58,11 @@ public class searchgui {
                 results.forEach(result -> resultArea.append(result + "\n"));
             }
         });
+
+
+
+
+        // Back button action
             backButton.addActionListener(e -> {
             StartMain startMain = new StartMain();
             frame.dispose(); // Close the search GUI
@@ -61,4 +73,17 @@ public class searchgui {
         frame.setResizable(false);
         frame.setVisible(true);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }

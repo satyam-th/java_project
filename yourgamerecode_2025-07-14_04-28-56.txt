@@ -1,0 +1,266 @@
+Game date: 2025-07-14_04-28-56
+Your filename: yourgamerecode_2025-07-14_04-28-56.txt
+Winner: zero
+------Players-----
+Player: hiro Position: 94
+Dice roll: [3, 2, 6, 1, 1, 2, 3, 3, 5, 3, 6, 1, 4, 5, 2, 5, 2, 3, 3, 3, 4, 1, 1, 3, 3, 6, 5, 3, 3, 1, 3, 2, 5, 5, 1, 5, 2, 3, 1, 5, 1, 5, 6, 4, 5, 3, 4, 5, 1, 3, 5, 6, 2, 4, 6, 4, 5, 2, 4]
+Player: zero Position: 100
+Dice roll: [6, 6, 3, 4, 5, 3, 4, 1, 6, 4, 2, 3, 1, 2, 6, 5, 4, 5, 2, 3, 6, 4, 5, 6, 5, 3, 1, 1, 5, 4, 2, 2, 5, 1, 6, 6, 5, 1, 3, 5, 4, 5, 4, 3, 5, 2, 1, 1, 2, 3, 4, 6, 1, 4, 6, 6, 6, 6, 3]
+full log
+Game start withhiro, zero
+hiroroll dice3.
+hiro 1 to 4
+ohh yehh! I  found ladder at4i reach to: 14
+zeroroll dice6.
+zero 1 to 7
+hiroroll dice2.
+hiro 14 to 16
+zeroroll dice6.
+zero 7 to 13
+hiroroll dice6.
+hiro 16 to 22
+zeroroll dice3.
+zero 13 to 16
+hiroroll dice1.
+hiro 22 to 23
+zeroroll dice4.
+zero 16 to 20
+hiroroll dice1.
+hiro 23 to 24
+zeroroll dice5.
+zero 20 to 25
+hiroroll dice2.
+hiro 24 to 26
+zeroroll dice3.
+zero 25 to 28
+ohh yehh! I  found ladder at28i reach to: 84
+hiroroll dice3.
+hiro 26 to 29
+zeroroll dice4.
+zero 84 to 88
+hiroroll dice3.
+hiro 29 to 32
+zeroroll dice1.
+zero 88 to 89
+hiroroll dice5.
+hiro 32 to 37
+zeroroll dice6.
+zero 89 to 95
+ohhh NOOOOOO! zerostep at sanke 95 eaten by snake now: 75.
+hiroroll dice3.
+hiro 37 to 40
+zeroroll dice4.
+zero 75 to 79
+hiroroll dice6.
+hiro 40 to 46
+zeroroll dice2.
+zero 79 to 81
+hiroroll dice1.
+hiro 46 to 47
+zeroroll dice3.
+zero 81 to 84
+hiroroll dice4.
+hiro 47 to 51
+ohh yehh! I  found ladder at51i reach to: 67
+zeroroll dice1.
+zero 84 to 85
+hiroroll dice5.
+hiro 67 to 72
+zeroroll dice2.
+zero 85 to 87
+ohhh NOOOOOO! zerostep at sanke 87 eaten by snake now: 24.
+hiroroll dice2.
+hiro 72 to 74
+zeroroll dice6.
+zero 24 to 30
+hiroroll dice5.
+hiro 74 to 79
+zeroroll dice5.
+zero 30 to 35
+hiroroll dice2.
+hiro 79 to 81
+zeroroll dice4.
+zero 35 to 39
+hiroroll dice3.
+hiro 81 to 84
+zeroroll dice5.
+zero 39 to 44
+hiroroll dice3.
+hiro 84 to 87
+ohhh NOOOOOO! hirostep at sanke 87 eaten by snake now: 24.
+zeroroll dice2.
+zero 44 to 46
+hiroroll dice3.
+hiro 24 to 27
+zeroroll dice3.
+zero 46 to 49
+hiroroll dice4.
+hiro 27 to 31
+zeroroll dice6.
+zero 49 to 55
+hiroroll dice1.
+hiro 31 to 32
+zeroroll dice4.
+zero 55 to 59
+hiroroll dice1.
+hiro 32 to 33
+zeroroll dice5.
+zero 59 to 64
+ohhh NOOOOOO! zerostep at sanke 64 eaten by snake now: 60.
+hiroroll dice3.
+hiro 33 to 36
+zeroroll dice6.
+zero 60 to 66
+hiroroll dice3.
+hiro 36 to 39
+zeroroll dice5.
+zero 66 to 71
+ohh yehh! I  found ladder at71i reach to: 91
+hiroroll dice6.
+hiro 39 to 45
+zeroroll dice3.
+zero 91 to 94
+hiroroll dice5.
+hiro 45 to 50
+zeroroll dice1.
+zero 94 to 95
+ohhh NOOOOOO! zerostep at sanke 95 eaten by snake now: 75.
+hiroroll dice3.
+hiro 50 to 53
+zeroroll dice1.
+zero 75 to 76
+hiroroll dice3.
+hiro 53 to 56
+zeroroll dice5.
+zero 76 to 81
+hiroroll dice1.
+hiro 56 to 57
+zeroroll dice4.
+zero 81 to 85
+hiroroll dice3.
+hiro 57 to 60
+zeroroll dice2.
+zero 85 to 87
+ohhh NOOOOOO! zerostep at sanke 87 eaten by snake now: 24.
+hiroroll dice2.
+hiro 60 to 62
+ohhh NOOOOOO! hirostep at sanke 62 eaten by snake now: 19.
+zeroroll dice2.
+zero 24 to 26
+hiroroll dice5.
+hiro 19 to 24
+zeroroll dice5.
+zero 26 to 31
+hiroroll dice5.
+hiro 24 to 29
+zeroroll dice1.
+zero 31 to 32
+hiroroll dice1.
+hiro 29 to 30
+zeroroll dice6.
+zero 32 to 38
+hiroroll dice5.
+hiro 30 to 35
+zeroroll dice6.
+zero 38 to 44
+hiroroll dice2.
+hiro 35 to 37
+zeroroll dice5.
+zero 44 to 49
+hiroroll dice3.
+hiro 37 to 40
+zeroroll dice1.
+zero 49 to 50
+hiroroll dice1.
+hiro 40 to 41
+zeroroll dice3.
+zero 50 to 53
+hiroroll dice5.
+hiro 41 to 46
+zeroroll dice5.
+zero 53 to 58
+hiroroll dice1.
+hiro 46 to 47
+zeroroll dice4.
+zero 58 to 62
+ohhh NOOOOOO! zerostep at sanke 62 eaten by snake now: 19.
+hiroroll dice5.
+hiro 47 to 52
+zeroroll dice5.
+zero 19 to 24
+hiroroll dice6.
+hiro 52 to 58
+zeroroll dice4.
+zero 24 to 28
+ohh yehh! I  found ladder at28i reach to: 84
+hiroroll dice4.
+hiro 58 to 62
+ohhh NOOOOOO! hirostep at sanke 62 eaten by snake now: 19.
+zeroroll dice3.
+zero 84 to 87
+ohhh NOOOOOO! zerostep at sanke 87 eaten by snake now: 24.
+hiroroll dice5.
+hiro 19 to 24
+zeroroll dice5.
+zero 24 to 29
+hiroroll dice3.
+hiro 24 to 27
+zeroroll dice2.
+zero 29 to 31
+hiroroll dice4.
+hiro 27 to 31
+zeroroll dice1.
+zero 31 to 32
+hiroroll dice5.
+hiro 31 to 36
+zeroroll dice1.
+zero 32 to 33
+hiroroll dice1.
+hiro 36 to 37
+zeroroll dice2.
+zero 33 to 35
+hiroroll dice3.
+hiro 37 to 40
+zeroroll dice3.
+zero 35 to 38
+hiroroll dice5.
+hiro 40 to 45
+zeroroll dice4.
+zero 38 to 42
+hiroroll dice6.
+hiro 45 to 51
+ohh yehh! I  found ladder at51i reach to: 67
+zeroroll dice6.
+zero 42 to 48
+hiroroll dice2.
+hiro 67 to 69
+zeroroll dice1.
+zero 48 to 49
+hiroroll dice4.
+hiro 69 to 73
+zeroroll dice4.
+zero 49 to 53
+hiroroll dice6.
+hiro 73 to 79
+zeroroll dice6.
+zero 53 to 59
+hiroroll dice4.
+hiro 79 to 83
+zeroroll dice6.
+zero 59 to 65
+hiroroll dice5.
+hiro 83 to 88
+zeroroll dice6.
+zero 65 to 71
+ohh yehh! I  found ladder at71i reach to: 91
+hiroroll dice2.
+hiro 88 to 90
+zeroroll dice6.
+zero 91 to 97
+hiroroll dice4.
+hiro 90 to 94
+zeroroll dice3.
+zero 97 to 100
+zero is  winner of this game!!
+zero is  winner of this game!!
+------End of Game Log-----

@@ -30,12 +30,12 @@ public class GameInstance {
                 this.playerDiceRolls.put(p.getName(), new ArrayList<>()); // creating the array list for the player  name = key  left to give value
                 
             } 
-    killplayercheck.put(0, "");
-    killplayercheck.put(0, "palyer2");
-    killplayercheck.put(0, "palyer3");
-    killplayercheck.put(0, "palyer4");
+    // killplayercheck.put(0, "palyer1");
+    // killplayercheck.put(0, "palyer2");
+    // killplayercheck.put(0, "palyer3");
+    // killplayercheck.put(0, "palyer4");
                 // message to log
-             log("Game start with" + player.stream().map(Player::getName).collect(Collectors.joining(", ")));
+            //  log("Game start with " + player.stream().map(Player::getName).collect(Collectors.joining(", ")));
           
         }
        
@@ -85,12 +85,12 @@ public class GameInstance {
                             if(board.isSankeHead(currentPlayer.getCurrentPosition())){
                                 //log
                                 System.out.println("snake hit");
-                                log("ohhh NOOOOOO! " +currentPlayer.getName()+ "step at sanke " + currentPlayer.getCurrentPosition() +" eaten by snake now: " +finalPosition +"."  );
+                                log("ohhh NOOOOOO! " +currentPlayer.getName()+ " step at sanke " + currentPlayer.getCurrentPosition() +" eaten by snake now: " +finalPosition +"."  );
                                 currentPlayer.incrementSnakeHit();
                             }
                             else if(board.isLadderBottom(currentPlayer.getCurrentPosition())){
                                 System.out.println("ladder came");
-                                log("ohh yehh! I  found ladder at" + currentPlayer.getCurrentPosition() + "i reach to: " +  finalPosition );
+                                log("ohh yehh! I  found ladder at " + currentPlayer.getCurrentPosition() + " I am going to : " +  finalPosition );
                             }
                              currentPlayer.setCurrentPosition(finalPosition);
                         }
